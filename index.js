@@ -10,17 +10,8 @@ db.once('open', function(callback){
 }) 
   
 var app=express() 
-   
-   
-var allowCrossDomain = function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
-  res.header("Access-Control-Allow-Headers", "*");
-
-  next();
-};
-
-app.use(allowCrossDomain);
+  
+  
 app.use(bodyParser.json()); 
 app.use(express.static('public')); 
 app.use(bodyParser.urlencoded({ 
@@ -40,7 +31,7 @@ db.collection('details').insertOne(data,function(err, collection){
               
     }); 
           
-    return res.redirect('signup_success.html'); 
+    return res.json({isSent:true ,message: "Record inserted Successfully"}); 
 }) 
   
 let port = process.env.PORT || 3000
