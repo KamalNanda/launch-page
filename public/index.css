@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    background-image: url('812 1.svg');
+    width: 100%;
+}
+.hero-bg{  
+    width: 100%;
+    
+    
+    background: linear-gradient(116.82deg, #090B28 0%, #4E274E 100%);
+ 
+   
+    height: 500px;
+    position: relative; 
+    
+
+}
+.hero-bg p{
+    margin: 0;
+   
+}
+nav{
+   
+    width: 90%;
+    /* padding: 20px; */
+    display: flex;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.social-holder{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.social-holder img{
+    width: 44px;
+    height: 44px;
+    margin: 8px;
+    padding: 0%;
+}
+#launching{ 
+font-family: Poppins;
+font-weight: 900 !important; 
+font-size: 50px;
+position: relative;
+top: 80px;
+line-height: 23px;
+/* identical to box height, or 25% */ 
+display: block;
+text-align: center;
+letter-spacing: 0.01em;
+width: 100%;
+color: #F7F7F7;
+
+}
+#image{
+    width: 70%;
+    margin: 10px;
+    display: block;
+    position: absolute;
+    height: 75%;
+    top: 300px;
+    left: 15%
+}
+#khelauction{
+    margin-top: 300px ;
+    margin-left: 210px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 200 !important; 
+font-size: 32px;
+line-height: 16px;
+/* or 25% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #090B28;
+}
+#para1{
+    height: 174px;
+    width:65%;
+    margin-left: 210px;
+}
+#line{
+left: 1.88%;
+right: 63.85%;
+top: 99.05%;
+bottom: 46.95%;
+width: 350px;
+height: 0;
+margin-left: 8%;
+
+border: 1px solid #4E274E;
+}
+#helpdiv{
+    width:900px ;
+    height:104px ;
+    
+    
+}
+#para{
+    
+    left: 9.69%;
+    right: 30.31%; 
+    top: 111.9%;
+    bottom: 38.75%;
+    
+    font-family: Poppins;
+    font-style: normal;
+    
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 1000px;
+    /* or 141% */
+    display: flex; 
+    align-items: center;
+    
+    letter-spacing: 1.2px;
+    color: #4E274E;
+}
+#help{
+    
+left: 28.74%;
+right: 4.79%;
+top: 134.38%;
+bottom: 31.83%;
+
+font-family: 'Poppins';
+
+font-weight: 1000 !important; 
+font-weight: 10;
+font-size: 30px;
+/* or 25% */
+
+color: #090B28;
+
+}
+#para2div{
+    width: 850px;
+    height: 175px;
+
+}
+#para2{
+    
+/* left: 32.69%;
+right: 25.31%;
+top: 154.9%;
+bottom: 38.75%; */
+max-width: 500px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size:15px; 
+max-width: 900px;
+
+/* or 141% */
+
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 1.2px;
+text-align: center;
+color: #4E274E;
+}
+input{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 26px;
+    border-radius: 5px;
+    background-color: rgba(78, 39, 78, 0.8);
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    border: 0;
+}
+.submit{
+    width: 520px;
+    height: 60px;
+    padding: 10px;
+    margin-top: 26px;
+    border-radius: 5px;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    border: 0;
+    background:  linear-gradient(180deg, #16102F 0%, #4E274E 100%);
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    padding-left: 10px;
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  @media (max-width: 1024px){
+
+  }
