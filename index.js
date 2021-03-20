@@ -34,11 +34,12 @@ db.collection('details').insertOne(data,function(err, collection){
     return res.redirect('signup_success.html'); 
 }) 
   
+let port = process.env.PORT || 3000
 app.get('/',function(req,res){ 
     res.set({ 
         'Access-control-Allow-Origin': '*'
         }); 
     return res.redirect('index.html'); 
-}).listen(3000) 
+}).listen(port) 
   
 console.log("server listening at port 3000"); 
