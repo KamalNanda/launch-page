@@ -2,7 +2,7 @@ var express=require("express");
 var bodyParser=require("body-parser"); 
   
 const mongoose = require('mongoose'); 
-mongoose.connect('mongodb+srv://rudy17:rudy17@cluster0.9jinf.mongodb.net/apnaipl?retryWrites=true&w=majority'); 
+mongoose.connect('mongodb+srv://anshika:Anshika@cluster0.tpd4t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'); 
 var db=mongoose.connection; 
 db.on('error', console.log.bind(console, "connection error")); 
 db.once('open', function(callback){ 
@@ -27,14 +27,19 @@ app.use(bodyParser.urlencoded({
     extended: true
 })); 
   
-app.post('/sign_up', function(req,res){ 
+app.post('/contact', function(req,res){ 
+    var name =req.body.name; 
     var email =req.body.email; 
-    var phone =req.body.phone; 
+    var phone=req.body.phone;
+    var message=req.body.message;
     var data = { 
+        "name":name,
+
         "email":email, 
-        "phone":phone 
+        "phone":phone ,
+        "message":message,
     } 
-db.collection('details').insertOne(data,function(err, collection){ 
+db.collection('contact').insertOne(data,function(err, collection){ 
         if (err) throw err; 
         console.log("Record inserted Successfully"); 
               
